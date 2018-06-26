@@ -1,0 +1,39 @@
+@import 'reset';
+@import 'scrollbar';
+
+//Fonts Variables
+// $hindbold: hindbold, Helvetica, Arial, sans-serif;
+
+html, body { background: #fff; $widthHeight: 100%; width: $widthHeight; height: $widthHeight; display: flex; overflow-x: hidden; overflow-y: auto; border: solid 2px red; }
+
+.disabled { opacity: 0.5; pointer-events: none; }
+
+.toast {
+  .toast-message { // width: auto !important; float: right; max-width: 350px; min-width: 225px;
+    &.toast-type-success {
+      .toast-message-text::before { content: '\2713'; }
+    }
+
+    &.toast-type-danger {
+      .toast-message-text::before { content: '\2716'; }
+    }
+
+    &.toast-type-warning {
+      .toast-message-text::before { content: '\26A0'; }
+    }
+
+    .toast-message-text { font-family: arial; font-size: 14px; display: flex; justify-content: center; align-items: center;
+      &::before { text-align: center; $widthHeight: 15px; width: $widthHeight; height: $widthHeight; line-height: $widthHeight + 4px; display: block; margin-right: 10px; }
+    }
+  }
+
+  .toast-button { $widthHeight: 100%; width: $widthHeight; height: $widthHeight; right: 0; }
+
+  .toast-message, .toast-button { @include border-radius(10px);
+    &::before { display: none; }
+  }
+}
+
+.wrapper { width: 100%; position: relative; }
+
+// @import './screens/bots/style';
