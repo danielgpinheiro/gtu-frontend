@@ -1,3 +1,4 @@
 import App from './app'
+import Auth from './auth'
 
-export { App }
+export { App, Auth }
