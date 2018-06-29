@@ -39,3 +39,4 @@ html, body { background: #fff; $widthHeight: 100%; width: $widthHeight; height: 
 .container-application { width: 100%; max-width: 680px; margin: 0 auto; }
 
 @import './views/auth/style';
+@import './components/loading/style';

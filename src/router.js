@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import {
-  Auth
+  Auth,
+  StudentQRCode
 } from './views'
 
 Vue.use(Router)
@@ -13,6 +14,11 @@ export default new Router({
       path: '/auth',
       name: 'auth',
       component: Auth
+    },
+    {
+      path: '/aluno',
+      name: 'StudentQRCode',
+      component: StudentQRCode
     }
   ]
 })

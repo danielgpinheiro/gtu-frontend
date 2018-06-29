@@ -1,5 +1,7 @@
 <template>
   <section class="auth">
+    <loading message="Sincronizando dados" :isOpen="loading"></loading>
+
     <div class="logo">
       <figure class="image is-128x128">
         <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2016/07/logo-2.png?auto=format&q=60&fit=max&w=930">
@@ -17,7 +19,7 @@
           </h2>
 
           <div class='auth-buttons'>
-            <button class="button is-info is-medium">
+            <button class="button is-info is-medium" @click="authWithFacebook()">
               <b-icon icon="facebook-box"></b-icon>
               <span>Entrar com o Facebook</span>
             </button>
