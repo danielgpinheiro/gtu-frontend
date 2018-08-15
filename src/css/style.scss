@@ -4,7 +4,7 @@
 //Fonts Variables
 // $hindbold: hindbold, Helvetica, Arial, sans-serif;
 
-html, body { background: #fff; $widthHeight: 100%; width: $widthHeight; height: $widthHeight; display: flex; overflow-x: hidden; overflow-y: auto; border: solid 2px red; }
+html, body { background: #fff; $widthHeight: 100%; width: $widthHeight; height: $widthHeight; display: flex; overflow-x: hidden; overflow-y: auto; border: solid 2px red; background: #f8f8f8; }
 
 .disabled { opacity: 0.5; pointer-events: none; }
 
@@ -36,4 +36,7 @@ html, body { background: #fff; $widthHeight: 100%; width: $widthHeight; height: 
 
 .wrapper { width: 100%; position: relative; }
 
-// @import './screens/bots/style';
+.container-application { width: 100%; max-width: 680px; margin: 0 auto; }
+
+@import './views/auth/style';
+@import './components/loading/style';
